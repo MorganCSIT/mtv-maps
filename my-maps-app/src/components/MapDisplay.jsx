@@ -2,7 +2,7 @@ import React from "react";
 
 const MapDisplay = ({ mapUrl }) => {
   return (
-    <div className="map-container" style={{ height: "500px", width: "100%" }}>
+    <div className="map-container" style={{ height: "60vh", width: "100%" }}>
       <iframe
         width="100%"
         height="100%"
