@@ -10,13 +10,15 @@ function App() {
 
   const mapOptions = [
     {
-      value: "https://maps.google.com/?q=New York",
-      label: "New York",
+      value:
+        "https://www.google.com/maps/d/embed?mid=1yEadiJSV3W_90XMluZyERkIEXRE&hl=en&ehbc=2E312F",
+      label: "Phuket full map",
       articleId: 1,
     },
     {
-      value: "https://maps.google.com/?q=London",
-      label: "London",
+      value:
+        "https://www.google.com/maps/d/embed?mid=19UESSqs4lEfrjIGcs1ICBqI6nPA&ehbc=2E312F",
+      label: "Phuket beaches",
       articleId: 2,
     },
     // Add more map options here
@@ -24,16 +26,26 @@ function App() {
 
   const articles = {
     1: {
-      heading: "New York",
+      heading: "Phuket full map",
       dateUpdated: "2023-12-01",
       content: "Content about New York...",
-      links: [{ url: "#", text: "Read more" }],
+      links: [
+        {
+          url: "https://www.google.com/maps/d/embed?mid=1yEadiJSV3W_90XMluZyERkIEXRE&hl=en&ehbc=2E312F",
+          text: "Read more",
+        },
+      ],
     },
     2: {
-      heading: "London",
+      heading: "Phuket beaches",
       dateUpdated: "2023-12-01",
       content: "Content about London...",
-      links: [{ url: "#", text: "Read more" }],
+      links: [
+        {
+          url: "https://www.google.com/maps/d/embed?mid=19UESSqs4lEfrjIGcs1ICBqI6nPA&ehbc=2E312F",
+          text: "Read more",
+        },
+      ],
     },
     // Add more articles here
   };

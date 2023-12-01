@@ -1,0 +1,53 @@
+body {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  /* Add a max-width if you want to limit the content width */
+  max-width: 1200px; /* Example max-width */
+  width: 100%; /* Ensures it takes up the full width of the body */
+}
+
+/* Rest of your CSS */
+
+.map-container {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 2;
+}
+
+@media (max-width: 900px) {
+  .map-container {
+    height: px;
+  }
+}
+
+.carousel {
+  color: black;
+}
+.content-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+}
+
+.article {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
