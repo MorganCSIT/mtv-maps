@@ -1,4 +1,4 @@
-export const mapsData = [
+const mapsData = [
   {
     id: 1,
     mapUrl:
@@ -39,3 +39,5 @@ export const mapsData = [
   },
   // Add more map data here
 ];
+
+export default mapsData;

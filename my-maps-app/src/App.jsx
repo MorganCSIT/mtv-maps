@@ -9,11 +9,16 @@ function App() {
   const [selectedMap, setSelectedMap] = useState(null);
   const [selectedArticle, setSelectedArticle] = useState(null);
 
-  const handleMapChange = (option) => {
-    const selectedData = mapsData.find((map) => map.label === option.label);
-    if (selectedData) {
-      setSelectedMap(selectedData.mapUrl);
-      setSelectedArticle(selectedData.article);
+  const handleMapChange = (options) => {
+    if (options.length > 0) {
+      const selectedOption = options[0];
+      const selectedData = mapsData.find(
+        (map) => map.label === selectedOption.label
+      );
+      if (selectedData) {
+        setSelectedMap(selectedData.mapUrl);
+        setSelectedArticle(selectedData.article);
+      }
     }
   };
 

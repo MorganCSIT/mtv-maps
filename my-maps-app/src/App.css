@@ -1,10 +1,29 @@
 .carousel {
   color: black;
   padding-bottom: 0px;
+
+  pointer-events: 1;
 }
 
 body {
-  background-color: darkseagreen;
+  background: linear-gradient(-10deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
@@ -29,9 +48,29 @@ body {
   }
 }
 
+@media (max-width: 1800px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .App {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .pair-container {
-  background-color: darkcyan;
-  padding: 20px;
+  padding: 15px;
   border-radius: 20px;
   width: 21rem;
+  border-style: solid;
+  border-width: 5px;
+  border-color: aliceblue;
+}
+
+/* Targeting the input field inside react-select */
+.react-select__input input {
+  /* Make the input read-only */
+  pointer-events: none;
+  /* Optional: Adjust the cursor style */
+  cursor: default;
 }
