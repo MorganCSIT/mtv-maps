@@ -1,7 +1,7 @@
 .carousel {
-  color: black;
-  padding-bottom: 0px;
-
+  color: white;
+  font-size: 20px;
+  background-color: #2e312f;
   pointer-events: 1;
 }
 
@@ -23,6 +23,11 @@ body {
   }
 }
 
+.css-wmy1p7-ReactDropdownSelect * {
+  box-sizing: border-box;
+  background-color: #2e312f;
+}
+
 body {
   display: flex;
   justify-content: center; /* Center horizontally */
@@ -39,16 +44,13 @@ body {
 }
 
 @media (min-width: 800px) {
-  /* CSS that should be displayed if width is equal to or less than 800px goes here */
-  .App {
-    width: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  /* CSS that should be displayed if width is equal to or more than 800px goes here */
+  div.pair-container {
+    width: 50vw;
   }
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 900px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
   .App {
     width: inherit;
@@ -60,11 +62,12 @@ body {
 
 .pair-container {
   padding: 15px;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 21rem;
   border-style: solid;
   border-width: 5px;
   border-color: aliceblue;
+  /* border-color: aliceblue; */
 }
 
 /* Targeting the input field inside react-select */
