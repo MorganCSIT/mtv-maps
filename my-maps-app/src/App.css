@@ -1,6 +1,6 @@
 .carousel {
   color: black;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 body {
@@ -9,6 +9,7 @@ body {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   min-height: 100vh; /* Full viewport height */
+  min-width: 100vw; /* Full viewport height */
   margin: 0; /* Remove default margin */
 }
 
@@ -32,5 +33,5 @@ body {
   background-color: darkcyan;
   padding: 20px;
   border-radius: 20px;
-  width: 23rem;
+  width: 21rem;
 }
