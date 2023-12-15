@@ -31,7 +31,12 @@ const mapsData = [
       content: (
         <div>
           <p>Our favourite beaches...</p>
-          {/* More JSX content */}
+          <ol>
+            <li>
+              Aoyon, obviously!
+              <p>Thers an undeniable magic in Aoyon</p>
+            </li>
+          </ol>
         </div>
       ),
       links: [{ url: "#", text: "Read more" }],

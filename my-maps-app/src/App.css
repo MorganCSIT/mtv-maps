@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(-10deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-10deg, #0077be, #9a487a, #f9bc00);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
@@ -60,20 +60,39 @@ body {
   }
 }
 
+/* Existing CSS */
 .pair-container {
   padding: 15px;
   border-radius: 10px;
-  width: 21rem;
+  width: 100%;
   border-style: solid;
   border-width: 5px;
-  border-color: aliceblue;
-  /* border-color: aliceblue; */
+  border-color: #444; /* Dark border */
+  background-color: rgba(
+    34,
+    34,
+    34,
+    0.9
+  ); /* Dark semi-transparent background */
+  color: #fff; /* White text for contrast */
+}
+
+/* New CSS for responsiveness */
+@media (min-width: 600px) {
+  .pair-container {
+    width: 75%;
+  }
+}
+
+@media (min-width: 900px) {
+  .pair-container {
+    width: 50%;
+  }
 }
 
 /* Targeting the input field inside react-select */
 .react-select__input input {
-  /* Make the input read-only */
   pointer-events: none;
-  /* Optional: Adjust the cursor style */
   cursor: default;
+  color: #fff; /* White text for contrast */
 }
