@@ -43,10 +43,10 @@ body {
   width: 100%; /* Ensures it takes up the full width of the body */
 }
 
-@media (min-width: 800px) {
+@media (min-width: 300px) {
   /* CSS that should be displayed if width is equal to or more than 800px goes here */
   div.pair-container {
-    width: 50vw;
+    width: 75vw;
   }
 }
 
@@ -135,9 +135,10 @@ body {
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 10px;
+  outline: none; /* Remove default outline */
 }
 
 .book-taxi-input:focus {
-  border-color: #0077be; /* Blue border when focused to match your theme */
-  outline: none;
+  border-color: #fff; /* Whiteish border when focused */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Whiteish box shadow when focused */
 }

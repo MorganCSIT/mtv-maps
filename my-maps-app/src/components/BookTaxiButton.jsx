@@ -15,9 +15,12 @@ const BookTaxiButton = () => {
   };
 
   return (
-    <div>
-      <button onClick={() => setShowForm(!showForm)}>
-        {showForm ? "Hide Form" : "Show Form"}
+    <div className="form-container">
+      <button
+        style={{ marginBottom: 10 }}
+        onClick={() => setShowForm(!showForm)}
+      >
+        {showForm ? "Hide Taxi Booking Form" : "Show Taxi Booking Form"}
       </button>
 
       {showForm && (

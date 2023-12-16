@@ -7,7 +7,9 @@ const Article = ({ article }) => {
   return (
     <div className="article">
       <h2>{article.heading}</h2>
+      <p>Looking to inquire Mr.A's service?</p>
       <BookTaxiButton />
+
       <p>
         <em>Updated on: {article.dateUpdated}</em>
       </p>
