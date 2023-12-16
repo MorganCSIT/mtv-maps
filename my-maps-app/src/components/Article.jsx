@@ -6,7 +6,8 @@ const Article = ({ article }) => {
 
   return (
     <div className="article">
-      <h2>{article.heading}</h2>
+      <h2>Book a taxi with Mr. A</h2>
+      <p>Fill in your form and to send a whatsapp message to Mr. A</p>
       <BookTaxiButton />
       <p>
         <em>Updated on: {article.dateUpdated}</em>
@@ -20,10 +21,10 @@ const Article = ({ article }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
+            <BookTaxiButton />
             {link.text}
           </a>
         ))}
-      <BookTaxiButton />
     </div>
   );
 };

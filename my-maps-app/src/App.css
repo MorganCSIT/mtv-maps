@@ -96,3 +96,38 @@ body {
   cursor: default;
   color: #fff; /* White text for contrast */
 }
+
+/* Existing CSS */
+.book-taxi-button {
+  /* Add styles for the book now button */
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #0077be;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+
+  /* Add styles for the taxi icon */
+  position: relative;
+  margin-left: 10px;
+}
+
+.book-taxi-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("taxi-icon.png"); /* Replace with the path to your taxi icon */
+  background-size: cover;
+}
+
+.book-taxi-button:hover {
+  background-color: #005ea3;
+}

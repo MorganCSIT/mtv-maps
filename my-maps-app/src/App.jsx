@@ -26,16 +26,15 @@ function App() {
   return (
     <div className="App">
       <div className="pair-container">
-        <TagCarousel
-          options={mapsData.map((map) => ({
-            value: map.mapUrl,
-            label: map.label,
-          }))}
-          onChange={handleMapChange}
-        />
-
         <div className="content-container">
           {selectedMap && <MapDisplay mapUrl={selectedMap} />}
+          <TagCarousel
+            options={mapsData.map((map) => ({
+              value: map.mapUrl,
+              label: map.label,
+            }))}
+            onChange={handleMapChange}
+          />
           <Article article={selectedArticle} />
         </div>
       </div>
