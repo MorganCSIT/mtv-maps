@@ -1,4 +1,5 @@
 import React from "react";
+import BookTaxiButton from "./BookTaxiButton";
 
 const Article = ({ article }) => {
   if (!article) return null;
@@ -6,6 +7,7 @@ const Article = ({ article }) => {
   return (
     <div className="article">
       <h2>{article.heading}</h2>
+      <BookTaxiButton />
       <p>
         <em>Updated on: {article.dateUpdated}</em>
       </p>
@@ -21,6 +23,7 @@ const Article = ({ article }) => {
             {link.text}
           </a>
         ))}
+      <BookTaxiButton />
     </div>
   );
 };
