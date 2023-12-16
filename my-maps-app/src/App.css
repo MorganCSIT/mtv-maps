@@ -97,37 +97,47 @@ body {
   color: #fff; /* White text for contrast */
 }
 
-/* Existing CSS */
 .book-taxi-button {
   /* Add styles for the book now button */
-  display: inline-block;
+  display: flex; /* Changed from inline-block to flex */
+  align-items: center; /* Align items in the center */
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: #0077be;
+  background-color: #000; /* Changed color to black */
   color: #fff;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   transition: background-color 0.3s ease;
-
-  /* Add styles for the taxi icon */
-  position: relative;
-  margin-left: 10px;
 }
 
 .book-taxi-button::before {
   content: "";
-  position: absolute;
-  top: 50%;
-  left: -20px;
-  transform: translateY(-50%);
+  margin-right: 10px; /* Add margin to the right of the icon */
   width: 20px;
   height: 20px;
-  background-image: url("taxi-icon.png"); /* Replace with the path to your taxi icon */
+  background-image: url("./assets/whatsapp-icon.png"); /* Replace with the path to your WhatsApp icon */
   background-size: cover;
 }
 
 .book-taxi-button:hover {
-  background-color: #005ea3;
+  background-color: #333; /* Darker shade of black */
+}
+
+.book-taxi-input {
+  padding: 7px;
+  border: 1px solid #444; /* Dark border to match your theme */
+  border-radius: 5px; /* Match border radius with the book-taxi-button */
+  background-color: #2e312f; /* Dark background to match your theme */
+  color: #fff; /* White text for contrast */
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.book-taxi-input:focus {
+  border-color: #0077be; /* Blue border when focused to match your theme */
+  outline: none;
 }

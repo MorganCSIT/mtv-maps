@@ -6,13 +6,13 @@ const Article = ({ article }) => {
 
   return (
     <div className="article">
-      <h2>Book a taxi with Mr. A</h2>
-      <p>Fill in your form and to send a whatsapp message to Mr. A</p>
+      <h2>{article.heading}</h2>
       <BookTaxiButton />
       <p>
         <em>Updated on: {article.dateUpdated}</em>
       </p>
       <div>{article.content}</div>
+      <BookTaxiButton />
       {article.links &&
         article.links.map((link, index) => (
           <a
@@ -21,7 +21,6 @@ const Article = ({ article }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <BookTaxiButton />
             {link.text}
           </a>
         ))}
