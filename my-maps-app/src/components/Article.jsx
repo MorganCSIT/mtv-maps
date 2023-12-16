@@ -6,15 +6,15 @@ const Article = ({ article }) => {
 
   return (
     <div className="article">
-      <h2>{article.heading}</h2>
-      <p>Looking to inquire Mr.A's service?</p>
+      <p>
+        <em>Looking to inquire Mr.A's taxi services?</em>
+      </p>
       <BookTaxiButton />
-
+      <div>{article.content}</div>
+      <BookTaxiButton />
       <p>
         <em>Updated on: {article.dateUpdated}</em>
       </p>
-      <div>{article.content}</div>
-      <BookTaxiButton />
       {article.links &&
         article.links.map((link, index) => (
           <a

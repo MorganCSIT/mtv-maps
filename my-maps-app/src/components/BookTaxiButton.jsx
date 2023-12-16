@@ -8,7 +8,11 @@ const BookTaxiButton = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const message = `Pickup Point: ${pickupPoint}, Destination: ${destination}, Pickup Time: ${pickupTime}`;
+    const message = `Pickup Point: ${pickupPoint}
+Destination: ${destination}
+Pickup Time: ${pickupTime}
+
+How much would this cost?`;
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/+66810851211?text=${encodedMessage}`;
     window.open(whatsappUrl, "_blank");
@@ -16,11 +20,8 @@ const BookTaxiButton = () => {
 
   return (
     <div className="form-container">
-      <button
-        style={{ marginBottom: 10 }}
-        onClick={() => setShowForm(!showForm)}
-      >
-        {showForm ? "Hide Taxi Booking Form" : "Show Taxi Booking Form"}
+      <button style={{}} onClick={() => setShowForm(!showForm)}>
+        {showForm ? "Hide Taxi Booking Form " : "Show Taxi Booking Form"}
       </button>
 
       {showForm && (
