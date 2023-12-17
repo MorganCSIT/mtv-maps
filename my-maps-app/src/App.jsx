@@ -4,7 +4,6 @@ import TagCarousel from "./components/TagCarousel";
 import Article from "./components/Article";
 import "./App.css";
 import mapsData from "./mapsData";
-import BookTaxiButton from "./components/BookTaxiButton";
 
 function App() {
   const [selectedMap, setSelectedMap] = useState(null);

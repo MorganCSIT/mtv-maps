@@ -5,7 +5,7 @@ const BookTaxiButton = () => {
   const [destination, setDestination] = useState("");
   const [pickupTime, setPickupTime] = useState("");
   const [pickupDate, setPickupDate] = useState("");
-  const [showForm, setShowForm] = useState(false);
+  const [note, setNote] = useState(""); // Added state for request
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -13,6 +13,7 @@ const BookTaxiButton = () => {
 Pickup Time: ${pickupTime}
 Pickup Point: ${pickupPoint}
 Destination: ${destination}
+Request: ${note} // Added request to the message
 
 How much would this cost?`;
     const encodedMessage = encodeURIComponent(message);
@@ -29,7 +30,6 @@ How much would this cost?`;
             type="date"
             value={pickupDate}
             onChange={(e) => setPickupDate(e.target.value)}
-            required
             className="book-taxi-input"
           />
         </label>
@@ -40,7 +40,6 @@ How much would this cost?`;
             type="time"
             value={pickupTime}
             onChange={(e) => setPickupTime(e.target.value)}
-            required
             className="book-taxi-input"
           />
         </label>
@@ -51,7 +50,6 @@ How much would this cost?`;
             type="text"
             value={pickupPoint}
             onChange={(e) => setPickupPoint(e.target.value)}
-            required
             className="book-taxi-input"
           />
         </label>
@@ -62,7 +60,16 @@ How much would this cost?`;
             type="text"
             value={destination}
             onChange={(e) => setDestination(e.target.value)}
-            required
+            className="book-taxi-input"
+          />
+        </label>
+
+        <label className="input-label">
+          Note
+          <textarea
+            value={note}
+            onChange={(e) => setNote(e.target.value)}
+            placeholder="oneway or return? More than 4 passengers? etc."
             className="book-taxi-input"
           />
         </label>
