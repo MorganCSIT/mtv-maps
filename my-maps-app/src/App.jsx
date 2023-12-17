@@ -31,7 +31,7 @@ function App() {
             <em>Explore Phuket!</em>
           </h2>
           <p>
-            <em> "Using a list of locally curated and catergorized maps"</em>
+            <em> "Using a catergorized list of locally curated maps"</em>
           </p>
         </div>
         <div className="content-container">
@@ -46,8 +46,6 @@ function App() {
           <Article article={selectedArticle} />
         </div>
         <br></br>
-        <h2 style={{ textAlign: "center" }}>Inquire Mr.A's Taxi Service</h2>
-        <BookTaxiButton />
       </div>
     </div>
   );

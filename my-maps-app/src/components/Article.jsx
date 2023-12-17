@@ -6,6 +6,16 @@ const Article = ({ article }) => {
 
   return (
     <div className="article">
+      <p>
+        <em>
+          Looking to book a taxi?{" "}
+          <a href="#bottom" className="scroll-link">
+            {" "}
+            Click here!
+          </a>
+        </em>
+      </p>
+
       <div>{article.content}</div>
 
       <p>
@@ -23,6 +33,10 @@ const Article = ({ article }) => {
             {link.text}
           </a>
         ))}
+
+      <div id="bottom"></div>
+      <h2 style={{ textAlign: "center" }}>Inquire Mr.A's Taxi Service</h2>
+      <BookTaxiButton />
     </div>
   );
 };

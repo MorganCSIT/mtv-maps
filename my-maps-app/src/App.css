@@ -17,15 +17,15 @@ body {
 }
 
 .carousel {
-  color: #000;
+  color: white;
   font-size: 20px;
-  background-color: #f0f0f0;
+  background-color: #2e312f;
   pointer-events: 1;
 }
 
 .css-wmy1p7-ReactDropdownSelect * {
   box-sizing: border-box;
-  background-color: #f0f0f0;
+  background-color: #2e312f;
 }
 
 body {
@@ -121,6 +121,7 @@ body {
   border-radius: 5px;
   background-color: #fff;
   color: #000;
+
   font-size: 16px;
   width: 100%;
   box-sizing: border-box;
@@ -160,4 +161,10 @@ body {
 .inquiry-form-button:hover {
   background-position: 100% 50%;
   transform: scale(1.05);
+}
+
+.input-label {
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
 }

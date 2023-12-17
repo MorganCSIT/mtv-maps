@@ -1,0 +1,162 @@
+body {
+  background: linear-gradient(-10deg, #0077be, #9a487a, #f9bc00);
+  background-size: 600% 600%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.carousel {
+  color: white;
+  font-size: 20px;
+  background-color: #2e312f;
+  pointer-events: 1;
+}
+
+.css-wmy1p7-ReactDropdownSelect * {
+  box-sizing: border-box;
+  background-color: #2e312f;
+}
+
+body {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Full viewport height */
+  min-width: 100vw; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+.App {
+  text-align: left;
+  /* Add a max-width if you want to limit the content width */
+  width: 100%; /* Ensures it takes up the full width of the body */
+}
+
+@media (min-width: 800px) {
+  /* CSS that should be displayed if width is equal to or more than 800px goes here */
+  div.pair-container {
+    width: 55vw;
+  }
+}
+
+@media (max-width: 800px) {
+  /* CSS that should be displayed if width is equal to or more than 800px goes here */
+  div.pair-container {
+    width: 87vw;
+  }
+}
+
+@media (max-width: 900px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .App {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Existing CSS */
+.pair-container {
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #444; /* Dark border */
+  background-color: rgba(
+    34,
+    34,
+    34,
+    0.9
+  ); /* Dark semi-transparent background */
+  color: #fff; /* White text for contrast */
+}
+
+/* Targeting the input field inside react-select */
+.react-select__input input {
+  pointer-events: none;
+  cursor: default;
+  color: #fff; /* White text for contrast */
+}
+
+.book-taxi-button {
+  /* Add styles for the book now button */
+  display: flex; /* Changed from inline-block to flex */
+
+  align-items: center; /* Align items in the center */
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #000; /* Changed color to black */
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.book-taxi-button::before {
+  content: "";
+  margin-right: 10px; /* Add margin to the right of the icon */
+  width: 20px;
+  height: 20px;
+  background-image: url("./assets/whatsapp-icon.png"); /* Replace with the path to your WhatsApp icon */
+  background-size: cover;
+}
+
+.book-taxi-button:hover {
+  background-color: #333; /* Darker shade of black */
+}
+
+.book-taxi-input {
+  padding: 7px;
+  border: 1px solid #444; /* Dark border to match your theme */
+  border-radius: 5px; /* Match border radius with the book-taxi-button */
+  background-color: #2e312f; /* Dark background to match your theme */
+  color: #fff; /* White text for contrast */
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  outline: none; /* Remove default outline */
+}
+
+.book-taxi-input:focus {
+  border-color: #fff; /* Whiteish border when focused */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Whiteish box shadow when focused */
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-40%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Add the class for the form when it's visible */
+.form-visible {
+  animation: slideInFromTop 0.2s ease-in-out;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

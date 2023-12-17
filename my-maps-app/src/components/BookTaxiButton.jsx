@@ -4,13 +4,15 @@ const BookTaxiButton = () => {
   const [pickupPoint, setPickupPoint] = useState("");
   const [destination, setDestination] = useState("");
   const [pickupTime, setPickupTime] = useState("");
+  const [pickupDate, setPickupDate] = useState("");
   const [showForm, setShowForm] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const message = `Pickup Point: ${pickupPoint}
-Destination: ${destination}
+    const message = `Pickup Date: ${pickupDate}
 Pickup Time: ${pickupTime}
+Pickup Point: ${pickupPoint}
+Destination: ${destination}
 
 How much would this cost?`;
     const encodedMessage = encodeURIComponent(message);
@@ -20,37 +22,20 @@ How much would this cost?`;
 
   return (
     <div className="form-container">
-      <div className="button-container">
-        <button
-          className="inquiry-form-button"
-          style={{ marginBottom: 10 }}
-          onClick={() => setShowForm(!showForm)}
-        >
-          {showForm ? "Close Inquiry Form" : "Open Inquiry Form"}
-        </button>
-      </div>
+      <form className="book-taxi-form" onSubmit={handleSubmit}>
+        <label className="input-label">
+          Pickup Date:
+          <input
+            type="date"
+            value={pickupDate}
+            onChange={(e) => setPickupDate(e.target.value)}
+            required
+            className="book-taxi-input"
+          />
+        </label>
 
-      {showForm && (
-        <form
-          className={`book-taxi-form ${showForm ? "form-visible" : ""}`}
-          onSubmit={handleSubmit}
-        >
-          <input
-            type="text"
-            value={pickupPoint}
-            onChange={(e) => setPickupPoint(e.target.value)}
-            placeholder="Pickup Point"
-            required
-            className="book-taxi-input"
-          />
-          <input
-            type="text"
-            value={destination}
-            onChange={(e) => setDestination(e.target.value)}
-            placeholder="Destination"
-            required
-            className="book-taxi-input"
-          />
+        <label className="input-label">
+          Pickup Time:
           <input
             type="time"
             value={pickupTime}
@@ -58,19 +43,42 @@ How much would this cost?`;
             required
             className="book-taxi-input"
           />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              marginBottom: 10,
-            }}
-          >
-            <button type="submit" className="book-taxi-button">
-              Send Inquiry
-            </button>
-          </div>
-        </form>
-      )}
+        </label>
+
+        <label className="input-label">
+          Pickup Point:
+          <input
+            type="text"
+            value={pickupPoint}
+            onChange={(e) => setPickupPoint(e.target.value)}
+            required
+            className="book-taxi-input"
+          />
+        </label>
+
+        <label className="input-label">
+          Destination:
+          <input
+            type="text"
+            value={destination}
+            onChange={(e) => setDestination(e.target.value)}
+            required
+            className="book-taxi-input"
+          />
+        </label>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginBottom: 10,
+          }}
+        >
+          <button type="submit" className="book-taxi-button">
+            Send Inquiry
+          </button>
+        </div>
+      </form>
     </div>
   );
 };
