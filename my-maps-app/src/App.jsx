@@ -4,7 +4,7 @@ import TagCarousel from "./components/TagCarousel";
 import Article from "./components/Article";
 import "./App.css";
 import mapsData from "./mapsData";
-import "./components/BookTaxiButton";
+import BookTaxiButton from "./components/BookTaxiButton";
 
 function App() {
   const [selectedMap, setSelectedMap] = useState(null);
@@ -26,6 +26,14 @@ function App() {
   return (
     <div className="App">
       <div className="pair-container">
+        <div style={{ textAlign: "center" }}>
+          <h2>
+            <em>Explore Phuket!</em>
+          </h2>
+          <p>
+            <em> "Using a list of locally curated and catergorized maps"</em>
+          </p>
+        </div>
         <div className="content-container">
           {selectedMap && <MapDisplay mapUrl={selectedMap} />}
           <TagCarousel
@@ -37,6 +45,9 @@ function App() {
           />
           <Article article={selectedArticle} />
         </div>
+        <br></br>
+        <h2 style={{ textAlign: "center" }}>Inquire Mr.A's Taxi Service</h2>
+        <BookTaxiButton />
       </div>
     </div>
   );

@@ -20,13 +20,21 @@ How much would this cost?`;
 
   return (
     <div className="form-container">
-      <button style={{}} onClick={() => setShowForm(!showForm)}>
-        {showForm ? "Hide Taxi Booking Form " : "Show Taxi Booking Form"}
-      </button>
+      <div className="button-container">
+        <button
+          className="inquiry-form-button"
+          style={{ marginBottom: 10 }}
+          onClick={() => setShowForm(!showForm)}
+        >
+          {showForm ? "Close Inquiry Form" : "Open Inquiry Form"}
+        </button>
+      </div>
 
       {showForm && (
-        <form className="book-taxi-form" onSubmit={handleSubmit}>
-          {/* Remove the extra form element */}
+        <form
+          className={`book-taxi-form ${showForm ? "form-visible" : ""}`}
+          onSubmit={handleSubmit}
+        >
           <input
             type="text"
             value={pickupPoint}
@@ -50,9 +58,17 @@ How much would this cost?`;
             required
             className="book-taxi-input"
           />
-          <button type="submit" className="book-taxi-button">
-            Book Taxi
-          </button>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginBottom: 10,
+            }}
+          >
+            <button type="submit" className="book-taxi-button">
+              Send Inquiry
+            </button>
+          </div>
         </form>
       )}
     </div>

@@ -6,15 +6,12 @@ const Article = ({ article }) => {
 
   return (
     <div className="article">
-      <p>
-        <em>Looking to inquire Mr.A's taxi services?</em>
-      </p>
-      <BookTaxiButton />
       <div>{article.content}</div>
-      <BookTaxiButton />
+
       <p>
         <em>Updated on: {article.dateUpdated}</em>
       </p>
+
       {article.links &&
         article.links.map((link, index) => (
           <a
