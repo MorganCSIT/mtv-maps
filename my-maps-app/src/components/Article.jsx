@@ -8,9 +8,9 @@ const Article = ({ article }) => {
     <div className="article">
       <p>
         <em>
-          Looking to book a taxi?{" "}
+          Looking to book a taxi?
+          <br></br>
           <a href="#bottom" className="scroll-link">
-            {" "}
             Click here!
           </a>
         </em>

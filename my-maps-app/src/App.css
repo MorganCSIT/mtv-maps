@@ -17,16 +17,16 @@ body {
 }
 
 .carousel {
-  color: white;
+  color: #2e312f;
   font-size: 20px;
-  background-color: #2e312f;
+  font-weight: bold;
+  background-color: white;
   pointer-events: 1;
 }
-
-.css-wmy1p7-ReactDropdownSelect * {
+/* .css-wmy1p7-ReactDropdownSelect * {
   box-sizing: border-box;
   background-color: #2e312f;
-}
+} */
 
 body {
   display: flex;
@@ -209,4 +209,8 @@ body {
   z-index: -1;
   animation: gradient 2s infinite;
   transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+em-centered {
+  text-align: center;
 }
