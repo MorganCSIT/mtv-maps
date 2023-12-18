@@ -22,7 +22,7 @@ const Article = ({ article }) => {
         <em>Updated on: {article.dateUpdated}</em>
       </p>
 
-      {article.links &&
+      {/* {article.links &&
         article.links.map((link, index) => (
           <a
             key={index}
@@ -32,7 +32,7 @@ const Article = ({ article }) => {
           >
             {link.text}
           </a>
-        ))}
+        ))} */}
 
       <div id="bottom"></div>
 

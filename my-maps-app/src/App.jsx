@@ -4,6 +4,7 @@ import TagCarousel from "./components/TagCarousel";
 import Article from "./components/Article";
 import "./App.css";
 import mapsData from "./mapsData";
+import BookTaxiButton from "./components/BookTaxiButton";
 
 function App() {
   const [selectedMap, setSelectedMap] = useState(null);
@@ -24,27 +25,29 @@ function App() {
 
   return (
     <div className="App">
-      <div className="pair-container">
-        <div style={{ textAlign: "center" }}>
-          <h2>
-            <em>Explore Phuket!</em>
-          </h2>
-          <p>
-            <em> "Using a catergorized list of locally curated maps"</em>
-          </p>
+      <div className="">
+        <div className="pair-container">
+          <div style={{ textAlign: "center" }}>
+            <h2>
+              <em>Explore Phuket!</em>
+            </h2>
+            <p>
+              <em> "Using a catergorized list of locally curated maps"</em>
+            </p>
+          </div>
+          <div className="content-container">
+            {selectedMap && <MapDisplay mapUrl={selectedMap} />}
+            <TagCarousel
+              options={mapsData.map((map) => ({
+                value: map.mapUrl,
+                label: map.label,
+              }))}
+              onChange={handleMapChange}
+            />
+            <Article article={selectedArticle} />
+          </div>
+          <br></br>
         </div>
-        <div className="content-container">
-          {selectedMap && <MapDisplay mapUrl={selectedMap} />}
-          <TagCarousel
-            options={mapsData.map((map) => ({
-              value: map.mapUrl,
-              label: map.label,
-            }))}
-            onChange={handleMapChange}
-          />
-          <Article article={selectedArticle} />
-        </div>
-        <br></br>
       </div>
     </div>
   );

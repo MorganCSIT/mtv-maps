@@ -68,7 +68,9 @@ body {
   }
 }
 .pair-container {
-  padding: 15px;
+  padding: 16px;
+  margin-top: 3px;
+  margin-bottom: 3px;
   border-radius: 10px;
   width: 100%;
   border-style: solid;
@@ -192,6 +194,7 @@ body {
   height: 150px;
   object-fit: cover;
   z-index: 1;
+  margin-top: 20px;
 }
 
 .profile-picture-background::before {
