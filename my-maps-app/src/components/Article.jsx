@@ -35,7 +35,7 @@ const Article = ({ article }) => {
         ))}
 
       <div id="bottom"></div>
-      <h2 style={{ textAlign: "center" }}>Inquire Mr.A's Taxi Service</h2>
+
       <BookTaxiButton />
     </div>
   );

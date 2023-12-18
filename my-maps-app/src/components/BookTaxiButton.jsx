@@ -1,19 +1,38 @@
 import React, { useState } from "react";
-
+import ProfilePicture from "./ProfilePicture";
 const BookTaxiButton = () => {
   const [pickupPoint, setPickupPoint] = useState("");
   const [destination, setDestination] = useState("");
   const [pickupTime, setPickupTime] = useState("");
   const [pickupDate, setPickupDate] = useState("");
   const [note, setNote] = useState(""); // Added state for request
+  const [name, setName] = useState(""); // Added state for request
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const message = `Pickup Date: ${pickupDate}
-Pickup Time: ${pickupTime}
-Pickup Point: ${pickupPoint}
-Destination: ${destination}
-Request: ${note} // Added request to the message
+    function formatDate(dateString) {
+      const options = { month: "2-digit", day: "2-digit", year: "2-digit" };
+      return new Date(dateString)
+        .toDateString(undefined, options)
+        .split("/")
+        .join("-");
+    }
+    const message = `
+
+Name
+- ${name}
+
+Date & Time
+- ${formatDate(pickupDate)} @ ${pickupTime}
+
+Pickup Point
+- ${pickupPoint}
+
+Destination
+- ${destination}
+
+Note
+- ${note} 
 
 How much would this cost?`;
     const encodedMessage = encodeURIComponent(message);
@@ -23,7 +42,30 @@ How much would this cost?`;
 
   return (
     <div className="form-container">
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+        <div className="profile-picture-background">
+          <ProfilePicture imageUrl="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/17/aa/42/my-job.jpg?w=500&h=-1&s=1" />
+        </div>
+        <h2>Inquire Mr.A's Taxi Service</h2>
+      </div>
+
       <form className="book-taxi-form" onSubmit={handleSubmit}>
+        <label className="input-label">
+          Your Name:
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="book-taxi-input"
+          />
+        </label>
         <label className="input-label">
           Pickup Date:
           <input
@@ -65,11 +107,11 @@ How much would this cost?`;
         </label>
 
         <label className="input-label">
-          Note
+          Note:
           <textarea
             value={note}
             onChange={(e) => setNote(e.target.value)}
-            placeholder="oneway or return? More than 4 passengers? etc."
+            placeholder=""
             className="book-taxi-input"
           />
         </label>
