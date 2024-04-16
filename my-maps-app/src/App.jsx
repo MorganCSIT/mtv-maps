@@ -41,10 +41,6 @@ function MapRoute() {
 
   return (
     <div className="pair-container">
-      <div style={{ textAlign: "center" }}>
-        <h2><em>Explore Phuket!</em></h2>
-        <p><em>"Using a categorized list of locally curated maps"</em></p>
-      </div>
       <div className="content-container">
         <MapDisplay mapUrl={mapData.mapUrl} />
         <TagCarousel
