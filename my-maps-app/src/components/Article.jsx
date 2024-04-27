@@ -21,8 +21,8 @@ const Article = ({ article }) => {
       <p>
         <em>Updated on: {article.dateUpdated}</em>
       </p>
-
-      {/* {article.links &&
+      {/* 
+      {article.links &&
         article.links.map((link, index) => (
           <a
             key={index}

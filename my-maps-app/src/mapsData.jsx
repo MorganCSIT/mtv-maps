@@ -2,101 +2,107 @@ const mapsData = [
   {
     id: 1,
     mapUrl:
-      "https://www.google.com/maps/d/embed?mid=1Ids1HeUTN1OEWOa_g3SyNE1lDMs&ehbc=2E312F",
-    label: "Markets",
+      "https://www.google.com/maps/d/u/0/embed?mid=1Ncfb1O2xy0AE9V1vIxm0zhu_Z8PPMPQ&ehbc=2E312F",
+    label: "Aoyon Essentials",
     article: {
-      heading: "Explore Phuket's Popular Markets",
+      heading: "Experience the Best of Aoyon",
       dateUpdated: "2023-12-01",
       content: (
         <div>
-          <h2>Experience the Vibrant Market Scene in Phuket</h2>
+          <h2>Experience Aoyon & Cape Panwa</h2>
           <p>
-            Sample the street food scene, shop for local crafts, and immerse
-            yourself in the local culture at these popular markets in Phuket:
+            Apart from the nearby restaurants and services, we have listed below
+            some places worth visiting in the area without needing to go into
+            town.{" "}
           </p>
           <ul>
             <li>
               <strong>
                 <a
-                  href="https://www.phuket.com/shopping/phuket-weekend-market.htm"
+                  href="https://maps.app.goo.gl/wjJJbuLqG2X1R6wx7"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Phuket Weekend Market:
+                  Chana Sunset Beach <br />
                 </a>
-              </strong>{" "}
-              Also known as Naka Market, it's the largest market in Phuket.
-              You'll find everything from street food to clothing and souvenirs
-              here.
+              </strong>
+              Begin your day at Aoyon Beach, a perfect spot for a peaceful
+              sunrise. Later, head to Chana Beach, just past the 7-Eleven, for
+              spectacular sunsets. Here you can dine right on the beach,
+              although swimming might be less appealing during low tide.
             </li>
             <li>
               <strong>
                 <a
-                  href="https://www.phuket.com/shopping/banzaan-market.htm"
+                  href="https://maps.app.goo.gl/2LwGBmsiCs7k3VuDA"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Banzaan Market:
+                  Phuket Aquarium <br />
                 </a>
-              </strong>{" "}
-              A great place to sample local Thai food. The market is clean,
-              well-organized, and offers a wide variety of fresh produce.
+              </strong>
+              Explore a fascinating array of marine life at the Phuket Aquarium,
+              an affordable attraction that also boasts a marine rescue center.
+              The area is also notable for its beautiful sunset views and lively
+              street food stalls that spring to life around 5:30 PM.
             </li>
             <li>
               <strong>
                 <a
-                  href="https://www.phuket.com/shopping/malint-market-patong.htm"
+                  href="https://maps.app.goo.gl/ohnJPe1T98e58zYL6"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Malin Plaza Patong:
+                  Ton Aoyon Waterfall
+                  <br />
                 </a>
-              </strong>{" "}
-              Known for its food stalls offering Thai and international dishes.
-              It's a great place to have dinner and do some shopping.
+              </strong>
+              For those who enjoy an active outing, the Ton Aoyon Waterfall
+              offers a wonderful route for running. Even in the dry season, when
+              the waterfall is less vigorous, this area remains a tranquil spot
+              worth visiting for its peaceful natural surroundings.
             </li>
             <li>
               <strong>
                 <a
-                  href="https://www.phuket.com/shopping/chillva-market.htm"
+                  href="https://maps.app.goo.gl/PyHscgpNZFwh3RHf6"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Chillva Market:
+                  Khaokad 360 View Tower
+                  <br />
                 </a>
-              </strong>{" "}
-              A trendy night market with a bohemian vibe. You'll find a mix of
-              food, fashion, and live music here.
+              </strong>
+              Drive up the mountain to Khaokad 360 View Tower for one of the
+              most breathtaking views in Phuket. It’s the second highest
+              viewpoint after the Big Buddha. Keep in mind that the gates close
+              at 6 PM, so plan your visit accordingly to capture the stunning
+              scenery.
             </li>
           </ul>
           <p>
-            Don't miss the chance to explore these markets and discover the rich
-            flavors and vibrant culture of Phuket!
+            Explore these exceptional spots to truly capture the essence and
+            excitement of Phuket!
           </p>
         </div>
       ),
-      links: [
-        {
-          url: "https://www.phuket.com/shopping/top10-markets.htm",
-          text: "Discover More Markets",
-        },
-      ],
     },
   },
   {
     id: 2,
     mapUrl:
-      "https://www.google.com/maps/d/embed?mid=1Ids1HeUTN1OEWOa_g3SyNE1lDMs&ehbc=2E312F",
-    label: "Markets",
+      "https://www.google.com/maps/d/u/0/embed?mid=1Q6vYlreOQbz0A0AS7u-MEFgIWdfiU8M&ehbc=2E312F",
+    label: "Phuket Town",
     article: {
-      heading: "Explore Phuket's Popular Markets",
+      heading: "Explore Phuket town",
       dateUpdated: "2023-12-01",
       content: (
         <div>
-          <h2>Experience the Vibrant Market Scene in Phuket</h2>
+          <h2>Exlpore Phuket town's cultural sites and shops</h2>
           <p>
-            Sample the street food scene, shop for local crafts, and immerse
-            yourself in the local culture at these popular markets in Phuket:
+            Walk around and sample the street food scene, shop for local crafts,
+            and immerse yourself in the culture. Here are some places we can
+            reccomend to check out:
           </p>
           <ul>
             <li>
@@ -116,127 +122,97 @@ const mapsData = [
             <li>
               <strong>
                 <a
-                  href="https://www.phuket.com/shopping/banzaan-market.htm"
+                  href="https://maps.app.goo.gl/WNYAfAV6RPSqvyLY9"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Banzaan Market:
+                  Natural Restaurant:
                 </a>
               </strong>{" "}
-              A great place to sample local Thai food. The market is clean,
-              well-organized, and offers a wide variety of fresh produce.
-            </li>
-            <li>
-              <strong>
-                <a
-                  href="https://www.phuket.com/shopping/malint-market-patong.htm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Malin Plaza Patong:
-                </a>
-              </strong>{" "}
-              Known for its food stalls offering Thai and international dishes.
-              It's a great place to have dinner and do some shopping.
-            </li>
-            <li>
-              <strong>
-                <a
-                  href="https://www.phuket.com/shopping/chillva-market.htm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Chillva Market:
-                </a>
-              </strong>{" "}
-              A trendy night market with a bohemian vibe. You'll find a mix of
-              food, fashion, and live music here.
+              A great restaurant that is mostly open air with a unique vibe
+              offering wide variety of authentic thai dishes. We like to sit at
+              the tables on the top floor, go and find out why!
             </li>
           </ul>
           <p>
-            Don't miss the chance to explore these markets and discover the rich
-            flavors and vibrant culture of Phuket!
+            Phuket town is also a popular nightlife destination for locals, it's
+            a different completely different scene than Patong's famous party
+            Street "Bangla Road"
           </p>
         </div>
       ),
-      links: [
-        {
-          url: "https://www.phuket.com/shopping/top10-markets.htm",
-          text: "Discover More Markets",
-        },
-      ],
     },
   },
   {
     id: 3,
     mapUrl:
-      "https://www.google.com/maps/d/embed?mid=1Ids1HeUTN1OEWOa_g3SyNE1lDMs&ehbc=2E312F",
-    label: "Markets",
+      "https://www.google.com/maps/d/embed?mid=1EpT1999Heig7bEY3-WD6iO0Fb310sXMS&ehbc=2E312F",
+    label: "Phuket's Romantic Restaurants",
     article: {
-      heading: "Explore Phuket's Popular Markets",
+      heading: "",
       dateUpdated: "2023-12-01",
       content: (
         <div>
-          <h2>Experience the Vibrant Market Scene in Phuket</h2>
+          <h2>Phuket's Romantic Scene</h2>
           <p>
-            Sample the street food scene, shop for local crafts, and immerse
-            yourself in the local culture at these popular markets in Phuket:
+            Phuket is a love island, there are tons of things to do as couples,
+            below we have listed some ideas of potential dates
           </p>
           <ul>
             <li>
               <strong>
                 <a
-                  href="https://www.phuket.com/shopping/phuket-weekend-market.htm"
+                  href="https://www.thavornbeachvillage.com/phuketromanticdinner/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Phuket Weekend Market:
+                  Romantic Beach Dinner at Thavorn Beach Village:
                 </a>
-              </strong>{" "}
-              Also known as Naka Market, it's the largest market in Phuket.
-              You'll find everything from street food to clothing and souvenirs
-              here.
+              </strong>
+              Enjoy a private candlelit dinner on the beach with the sound of
+              waves in the background, perfect for a romantic evening.
             </li>
             <li>
               <strong>
                 <a
-                  href="https://www.phuket.com/shopping/banzaan-market.htm"
+                  href="https://www.tripadvisor.com/Attraction_Review-g1215780-d1758656-Reviews-Phang_Nga_Bay-Ko_Yao_Noi_Phang_Nga_Province.html"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Banzaan Market:
+                  Sunset Kayak Trip in Phang Nga Bay:
                 </a>
-              </strong>{" "}
-              A great place to sample local Thai food. The market is clean,
-              well-organized, and offers a wide variety of fresh produce.
+              </strong>
+              Kayak through the majestic limestone cliffs and enjoy the sunset
+              with your partner, an unforgettable scenic experience.
             </li>
             <li>
               <strong>
                 <a
-                  href="https://www.phuket.com/shopping/malint-market-patong.htm"
+                  href="https://www.tripadvisor.com/Attraction_Review-g297937-d447277-Reviews-Simba_Sea_Trips-Rawai_Phuket_Town_Phuket.html"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Malin Plaza Patong:
+                  Simba Sea Trips:
                 </a>
-              </strong>{" "}
-              Known for its food stalls offering Thai and international dishes.
-              It's a great place to have dinner and do some shopping.
+              </strong>
+              Take a private boat trip around the beautiful islands surrounding
+              Phuket. Perfect for a day of exploring and snorkeling together.
             </li>
             <li>
               <strong>
                 <a
-                  href="https://www.phuket.com/shopping/chillva-market.htm"
+                  href="https://www.layanaresort.com/en-us/spa-wellness"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Chillva Market:
+                  Couples Spa Day at Layana Resort & Spa:
                 </a>
-              </strong>{" "}
-              A trendy night market with a bohemian vibe. You'll find a mix of
-              food, fashion, and live music here.
+              </strong>
+              Relax and unwind with a couples spa treatment, enhancing
+              relaxation and bonding in a serene setting.
             </li>
           </ul>
+
           <p>
             Don't miss the chance to explore these markets and discover the rich
             flavors and vibrant culture of Phuket!
@@ -333,126 +309,6 @@ const mapsData = [
           text: "Discover More Markets",
         },
       ],
-    },
-  },
-  {
-    id: 5,
-    mapUrl:
-      "https://www.google.com/maps/d/embed?mid=1RaTFimNmsOm9XLN6gk5Q3GpgqMA&ehbc=2E312F",
-    label: "Phuket Nightlife Hotspots",
-    article: {
-      heading: "Phuket Nightlife",
-      dateUpdated: "2023-12-01",
-      content: (
-        <div>
-          <h2>Experience the Vibrant Nightlife of Phuket</h2>
-          <p>
-            From beach clubs to night markets, here are some of the best
-            nightlife hotspots in Phuket:
-          </p>
-          <ul>
-            <li>
-              <strong>Bangla Road:</strong> The heart of Phuket's nightlife,
-              Bangla Road is filled with bars, clubs, and live music venues.
-            </li>
-            <li>
-              <strong>Cape Coral:</strong> A stylish beach club offering
-              stunning sea views, delicious cocktails, and live DJ sets.
-            </li>
-            <li>
-              <strong>Night Markets:</strong> For a more local experience, visit
-              the night markets where you can sample street food, shop for
-              souvenirs, and enjoy live entertainment.
-            </li>
-          </ul>
-          <p>
-            Experience the vibrant nightlife of Phuket and make unforgettable
-            memories!
-          </p>
-        </div>
-      ),
-      links: [{ url: "#", text: "Discover More Nightlife Hotspots" }],
-    },
-  },
-  {
-    id: 6,
-    mapUrl:
-      "https://www.google.com/maps/d/embed?mid=1r41LHPxZ-xopGzV84PC6MPl7Siw&ehbc=2E312F",
-    label: "Phuket Shopping Centers",
-    article: {
-      heading: "Shopping in Phuket",
-      dateUpdated: "2023-12-01",
-      content: (
-        <div>
-          <h2>Explore Shopping Destinations in Phuket</h2>
-          <p>
-            From local markets to luxury malls, here are some of the best places
-            to shop in Phuket:
-          </p>
-          <ul>
-            <li>
-              <strong>Jungceylon Shopping Mall:</strong> Located in Patong,
-              Jungceylon is one of the biggest shopping complexes in Phuket.
-            </li>
-            <li>
-              <strong>Central Festival Phuket:</strong> This is the place to go
-              for international brands, a wide range of dining options, and
-              entertainment facilities.
-            </li>
-            <li>
-              <strong>Phuket Weekend Market:</strong> For a more local shopping
-              experience, visit the Phuket Weekend Market where you can find
-              everything from clothes to street food.
-            </li>
-          </ul>
-          <p>
-            Explore the diverse shopping destinations in Phuket and find unique
-            souvenirs to take home!
-          </p>
-        </div>
-      ),
-      links: [{ url: "#", text: "Phuket Shopping Guide" }],
-    },
-  },
-  {
-    id: 7,
-    mapUrl:
-      "https://www.google.com/maps/d/embed?mid=1xKUsu5P0pO5EoVFMSCdM1olt7qHATTUa&ehbc=2E312F",
-    label: "Phuket Cultural Sites",
-    article: {
-      heading: "Cultural Sites in Phuket",
-      dateUpdated: "2023-12-01",
-      content: (
-        <div>
-          <h2>Visit the Cultural and Historical Sites of Phuket</h2>
-          <p>
-            Immerse yourself in the rich history and culture of Phuket at these
-            sites:
-          </p>
-          <ul>
-            <li>
-              <strong>Big Buddha:</strong> This 45-meter tall statue is one of
-              the most famous landmarks in Phuket, offering panoramic views of
-              the island.
-            </li>
-            <li>
-              <strong>Old Phuket Town:</strong> Explore the beautifully
-              preserved Sino-Portuguese architecture in Old Phuket Town, a
-              testament to the island's rich cultural heritage.
-            </li>
-            <li>
-              <strong>Wat Chalong:</strong> Visit Wat Chalong, the largest and
-              most important Buddhist temple in Phuket, known for its beautiful
-              pagoda and intricate murals.
-            </li>
-          </ul>
-          <p>
-            Discover the cultural and historical treasures of Phuket and gain a
-            deeper understanding of the island's heritage!
-          </p>
-        </div>
-      ),
-      links: [{ url: "#", text: "Explore More Cultural Sites" }],
     },
   },
 
