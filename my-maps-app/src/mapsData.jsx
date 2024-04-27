@@ -254,47 +254,51 @@ const mapsData = [
                 </a>
               </strong>{" "}
               Also known as Naka Market, it's the largest market in Phuket.
-              You'll find everything from street food to clothing and souvenirs
-              here.
+              Higly reccomended to go, great place for souvenir shopping, has
+              street food and restaurant section. You can also get drinks and
+              listen to live music
             </li>
             <li>
               <strong>
                 <a
-                  href="https://www.phuket.com/shopping/banzaan-market.htm"
+                  href="https://maps.app.goo.gl/kh6f5YrmWyM5sd3s5"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Banzaan Market:
                 </a>
               </strong>{" "}
-              A great place to sample local Thai food. The market is clean,
-              well-organized, and offers a wide variety of fresh produce.
+              A unique fresh market experience where you choose from a variety
+              of seafoods and have a restaurant cook it however you like.
             </li>
             <li>
               <strong>
                 <a
-                  href="https://www.phuket.com/shopping/malint-market-patong.htm"
+                  href="https://maps.app.goo.gl/4Y62pNiymh7AyUhA8"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Malin Plaza Patong:
+                  Ban Bo Rae local market:
                 </a>
               </strong>{" "}
-              Known for its food stalls offering Thai and international dishes.
-              It's a great place to have dinner and do some shopping.
+              A local fishermans market nearby that opens only in the late
+              afternoon from 4pm to 7pm. It's a great place to get fresh
+              vegetables and seafood.
             </li>
             <li>
               <strong>
                 <a
-                  href="https://www.phuket.com/shopping/chillva-market.htm"
+                  href="https://maps.app.goo.gl/PgSLv4wKeudZoLUf9"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Chillva Market:
                 </a>
               </strong>{" "}
-              A trendy night market with a bohemian vibe. You'll find a mix of
-              food, fashion, and live music here.
+              A trendy night market thats open during the week. You'll find a
+              mix of food, fashion, and live music here. Get your beverage and
+              food from the various stalls and have a seat at one of the table
+              plazas near the live music.
             </li>
           </ul>
           <p>
