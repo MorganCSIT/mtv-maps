@@ -58,9 +58,8 @@ const mapsData = [
                 </a>
               </strong>
               For those who enjoy an active outing, the Ton Aoyon Waterfall
-              offers a wonderful route for running. Even in the dry season, when
-              the waterfall is less vigorous, this area remains a tranquil spot
-              worth visiting for its peaceful natural surroundings.
+              offers a wonderful route for running. It is a tranquil spot worth
+              visiting for its peaceful natural surroundings.
             </li>
             <li>
               <strong>
@@ -74,15 +73,15 @@ const mapsData = [
                 </a>
               </strong>
               Drive up the mountain to Khaokad 360 View Tower for one of the
-              most breathtaking views in Phuket. It’s the second highest
+              most breathtaking views in Phuket. It's the second highest
               viewpoint after the Big Buddha. Keep in mind that the gates close
               at 6 PM, so plan your visit accordingly to capture the stunning
               scenery.
             </li>
           </ul>
           <p>
-            Explore these exceptional spots to truly capture the essence and
-            excitement of Phuket!
+            Explore these exceptional spots to truly capture the essence of
+            Aoyon & Cape Panwa!
           </p>
         </div>
       ),
@@ -112,7 +111,8 @@ const mapsData = [
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Phuket Weekend Market:
+                  Phuket Weekend Market
+                  <br />
                 </a>
               </strong>{" "}
               Also known as Naka Market, it's the largest market in Phuket.
@@ -126,7 +126,8 @@ const mapsData = [
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Natural Restaurant:
+                  Natural Restaurant
+                  <br />
                 </a>
               </strong>{" "}
               A great restaurant that is mostly open air with a unique vibe
@@ -146,7 +147,7 @@ const mapsData = [
   {
     id: 3,
     mapUrl:
-      "https://www.google.com/maps/d/embed?mid=1EpT1999Heig7bEY3-WD6iO0Fb310sXMS&ehbc=2E312F",
+      "https://www.google.com/maps/d/u/0/embed?mid=15umN_WoKJyhT2c9yW2vvpJoW1WZ8mbs&ehbc=2E312F",
     label: "Phuket's Romantic Restaurants",
     article: {
       heading: "",
@@ -162,75 +163,30 @@ const mapsData = [
             <li>
               <strong>
                 <a
-                  href="https://www.thavornbeachvillage.com/phuketromanticdinner/"
+                  href="https://maps.app.goo.gl/tiTAoznqxqZ7dQbP8"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Romantic Beach Dinner at Thavorn Beach Village:
+                  Bandara Shine Spa:
                 </a>
               </strong>
-              Enjoy a private candlelit dinner on the beach with the sound of
-              waves in the background, perfect for a romantic evening.
-            </li>
-            <li>
-              <strong>
-                <a
-                  href="https://www.tripadvisor.com/Attraction_Review-g1215780-d1758656-Reviews-Phang_Nga_Bay-Ko_Yao_Noi_Phang_Nga_Province.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Sunset Kayak Trip in Phang Nga Bay:
-                </a>
-              </strong>
-              Kayak through the majestic limestone cliffs and enjoy the sunset
-              with your partner, an unforgettable scenic experience.
-            </li>
-            <li>
-              <strong>
-                <a
-                  href="https://www.tripadvisor.com/Attraction_Review-g297937-d447277-Reviews-Simba_Sea_Trips-Rawai_Phuket_Town_Phuket.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Simba Sea Trips:
-                </a>
-              </strong>
-              Take a private boat trip around the beautiful islands surrounding
-              Phuket. Perfect for a day of exploring and snorkeling together.
-            </li>
-            <li>
-              <strong>
-                <a
-                  href="https://www.layanaresort.com/en-us/spa-wellness"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Couples Spa Day at Layana Resort & Spa:
-                </a>
-              </strong>
-              Relax and unwind with a couples spa treatment, enhancing
-              relaxation and bonding in a serene setting.
+              <br />
+              Relax and unwind with a couples spa treatment
             </li>
           </ul>
 
           <p>
-            Don't miss the chance to explore these markets and discover the rich
-            flavors and vibrant culture of Phuket!
+            Don't miss the chance to love and absorb phukets serence romantic
+            vibes
           </p>
         </div>
       ),
-      links: [
-        {
-          url: "https://www.phuket.com/shopping/top10-markets.htm",
-          text: "Discover More Markets",
-        },
-      ],
     },
   },
   {
     id: 4,
     mapUrl:
-      "https://www.google.com/maps/d/embed?mid=1Ids1HeUTN1OEWOa_g3SyNE1lDMs&ehbc=2E312F",
+      "https://www.google.com/maps/d/u/0/embed?mid=1p8HVCat5ljS7RIy_Wi4FyzLSNrpH8MU&ehbc=2E312F",
     label: "Markets",
     article: {
       heading: "Explore Phuket's Popular Markets",
@@ -303,7 +259,7 @@ const mapsData = [
           </ul>
           <p>
             Don't miss the chance to explore these markets and discover the rich
-            flavors and vibrant culture of Phuket!
+            flavors and vibrant Market culture of Phuket!
           </p>
         </div>
       ),
