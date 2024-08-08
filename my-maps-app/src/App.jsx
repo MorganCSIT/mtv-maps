@@ -11,7 +11,7 @@ import TagCarousel from "./components/TagCarousel";
 import Article from "./components/Article";
 import "./App.css";
 import mapsData from "./mapsData";
-import { HiArrowSmDown } from "react-icons/hi";
+import { HiArrowSmDown, HiArrowSmLeft } from "react-icons/hi"; // Import the left arrow icon
 
 function App() {
   return (
@@ -47,13 +47,9 @@ function MapRoute() {
   return (
     <div className="pair-container">
       <div className="help-arrows">
-        <div className="down-arrow-button">
-          <span>Open menu</span>
-          <HiArrowSmDown className="down-arrow" />
-        </div>
-        <div className="down-arrow-button-right"></div>
         <div className="content-container">
           <MapDisplay mapUrl={mapData.mapUrl} />
+
           <TagCarousel
             options={mapsData.map((map) => ({
               value: map.id.toString(),
@@ -66,8 +62,10 @@ function MapRoute() {
               }
             }}
           />
+
           <Article article={mapData.article} />
         </div>
+
         <br></br>
       </div>
     </div>

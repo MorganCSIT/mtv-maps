@@ -49,15 +49,25 @@ body {
   font-size: 15px;
 }
 
-.down-arrow {
+.icon-style {
   height: auto;
   width: 20px;
   padding-left: 20px;
+  padding-right: 5px;
+}
+
+.icon-style-right {
+  height: auto;
+  width: 20px;
+  padding-left: 20px;
+  padding-right: 5px;
+  display: flex;
+  position: end;
 }
 
 .down-arrow-button {
   display: flex;
-  flex-direction: column; /* Stack children vertically */
+  flex-direction: row; /* Stack children vertically */
   align-items: left; /* Center-align children */
 }
 
